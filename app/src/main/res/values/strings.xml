@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">DubHacks</string>
+
+
+    <string-array name='essentials'>
+        <item>Tampons</item>
+        <item>Menstruation Pads</item>
+        <item>Condoms</item>
+        <item>Band-Aids</item>
+    </string-array>
+
+
+
+
+</resources>
