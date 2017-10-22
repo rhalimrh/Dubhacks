@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FFFFFF"
+    android:background="#FDEBF8"
     tools:context="com.example.android.dubhacks.MainActivity">
 
     <ImageView
@@ -15,9 +15,16 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:scaleType="centerInside"
-        android:paddingBottom="20dp"
-        android:layout_marginBottom="200dp"
+        android:paddingTop="40dp"
+        android:layout_marginBottom="-50dp"
         />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:background="@drawable/select_one"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,7 +40,8 @@
             android:layout_weight="1"
             android:textOff=""
             android:textOn=""
-            android:layout_marginRight="12dp"/>
+            android:layout_marginRight="12dp"
+            android:onClick="pressPadButton"/>
 
         <ToggleButton
             android:id="@+id/button_condom"
@@ -43,7 +51,8 @@
             android:layout_weight="1"
             android:textOff=""
             android:textOn=""
-            android:layout_marginRight="12dp"/>
+            android:layout_marginRight="12dp"
+            android:onClick="pressCondomButton"/>
 
         <ToggleButton
             android:id="@+id/button_bandaid"
@@ -53,17 +62,20 @@
             android:layout_weight="1"
             android:textOff=""
             android:textOn=""
-            android:layout_marginRight="12dp"/>
+            android:layout_marginRight="12dp"
+            android:onClick="pressBandAidButton"/>
 
     </LinearLayout>
 
     <ImageButton
         android:id="@+id/button_submit"
         android:background="@drawable/button"
-        android:layout_width="150dip"
+        android:scaleType="fitXY"
+        android:layout_width="190dip"
         android:layout_height="75dip"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="12dp"
-        android:layout_marginTop="40dp" />
+        android:layout_marginTop="15dp"
+        android:onClick="pressButton"/>
 
 </LinearLayout>

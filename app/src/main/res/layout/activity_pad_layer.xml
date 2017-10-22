@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#530B85"
+    tools:context="com.example.android.dubhacks.MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/successpad"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="centerInside"
+        android:paddingTop="40dp"
+        android:layout_marginBottom="-50dp"
+        />
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="97dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="12dp"
+        android:layout_weight="0.02">
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.08"
+        android:background="@drawable/haveone"
+        android:paddingTop="20dp"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="382dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="159dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/yes"
+            android:onClick="pressButton"
+            android:scaleType="fitXY" />
+
+        <ImageButton
+            android:layout_width="158dp"
+            android:layout_height="62dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/no"
+            android:onClick="pressButton"
+            android:scaleType="fitXY" />
+
+    </LinearLayout>
+
+    >
+
+</LinearLayout>
