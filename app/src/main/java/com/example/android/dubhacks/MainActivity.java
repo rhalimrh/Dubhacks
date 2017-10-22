@@ -77,15 +77,9 @@ public class MainActivity extends AppCompatActivity{
         submit_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(selectPad) {
-                    Intent padIntent = new Intent(MainActivity.this, pad_layer.class);
-                    startActivity(padIntent);
-                } else if(selectCondom) {
-                    Intent condomIntent = new Intent(MainActivity.this, condom_layer.class);
-                    startActivity(condomIntent);
-                } else if(selectBandAid) {
-                    Intent bandAidIntent = new Intent(MainActivity.this, bandAid_layer.class);
-                    startActivity(bandAidIntent);
+                if(selectPad == true || selectBandAid == true || selectCondom == true) {
+                    Intent myIntent = new Intent(MainActivity.this, loading.class);
+                    startActivity(myIntent);
                 }
             }
         });
