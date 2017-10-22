@@ -5,37 +5,65 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#FFFFFF"
     tools:context="com.example.android.dubhacks.MainActivity">
 
     <ImageView
         android:id="@+id/logo"
-        android:src="@drawable/pepsi"
+        android:src="@drawable/togo"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2"
-        android:scaleType="centerCrop"
+        android:layout_weight="1"
+        android:scaleType="centerInside"
+        android:paddingBottom="20dp"
+        android:layout_marginBottom="200dp"
         />
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:text="Select"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:spinnerMode="dropdown"
-        android:layout_weight="1"
-        android:layout_gravity="center_horizontal"
-        android:entries="@array/essentials"></Spinner>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="12dp">
 
-    <Button
-        android:id="@+id/button"
-        android:text="Submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        <ToggleButton
+            android:id="@+id/button_pad"
+            android:background="@drawable/selector_pad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOff=""
+            android:textOn=""
+            android:layout_marginRight="12dp"/>
+
+        <ToggleButton
+            android:id="@+id/button_condom"
+            android:background="@drawable/selector_condom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOff=""
+            android:textOn=""
+            android:layout_marginRight="12dp"/>
+
+        <ToggleButton
+            android:id="@+id/button_bandaid"
+            android:background="@drawable/selector_bandaid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOff=""
+            android:textOn=""
+            android:layout_marginRight="12dp"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/button_submit"
+        android:background="@drawable/button"
+        android:layout_width="150dip"
+        android:layout_height="75dip"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="12dp"
-        android:background="@color/colorAccent"
-        android:layout_marginTop="12dp"
-        android:onClick="pressButton"
-        />
+        android:layout_marginTop="40dp" />
 
 </LinearLayout>

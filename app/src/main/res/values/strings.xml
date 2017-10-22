@@ -3,6 +3,7 @@
 
 
     <string-array name='essentials'>
+        <item>Select an Item...</item>
         <item>Tampons</item>
         <item>Menstruation Pads</item>
         <item>Condoms</item>
