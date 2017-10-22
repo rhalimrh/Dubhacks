@@ -80,14 +80,10 @@ public class MainActivity extends AppCompatActivity{
                 if(selectPad) {
                     Intent padIntent = new Intent(MainActivity.this, pad_layer.class);
                     startActivity(padIntent);
-                }
-
-                if(selectCondom) {
+                } else if(selectCondom) {
                     Intent condomIntent = new Intent(MainActivity.this, condom_layer.class);
                     startActivity(condomIntent);
-                }
-
-                if(selectBandAid) {
+                } else if(selectBandAid) {
                     Intent bandAidIntent = new Intent(MainActivity.this, bandAid_layer.class);
                     startActivity(bandAidIntent);
                 }
